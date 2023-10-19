@@ -265,12 +265,11 @@
                 // save the file
                 let serializer = new XMLSerializer();
                 let new_content = serializer.serializeToString(xmlDoc);
-                console.log(content)
+                console.log(new_content)
 
                 // download the file
-                let blob = new Blob([content], {type: "text/plain;charset=utf-8"});
+                let blob = new Blob([new_content], {type: "text/plain;charset=utf-8"});
                 saveData(blob, "savegame.xml");
-
 
 
             };
