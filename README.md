@@ -4,7 +4,7 @@
 
 Just get on the website and download your data. It's that simple. :)
 
-https://davphla.github.io/remove-password-savefile/
+https://davphla.github.io/GD-GetSavefileInXML/
 
 ## How it works
 
