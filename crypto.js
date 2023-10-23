@@ -13,17 +13,16 @@ function decode(data) {
         return data
     console.log(data)
     data = xor(data, 11)
-    data = data.replace(/\0/g, "")
     console.log(data)
-    data = atob(data)
+    data = data.replace(/\0/g, "")
     data = data.replace(/-/g, '+').replace(/_/g, '/')
-    data = data.replace(/><(?!\/)/g, '> <')
+    data = atob(data)
     console.log(data)
     data = data.split('').map(function (x) {
         return x.charCodeAt(0);
     });
     data = new Uint8Array(data);
-    data = pako.inflate(data);
+    data = pako.inflate(data, );
     return new Uint16Array(data).reduce((acc, byte) => acc + String.fromCharCode(byte), '');
 
 }

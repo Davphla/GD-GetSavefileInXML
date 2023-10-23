@@ -14,5 +14,6 @@ def decrypt_data(savedata: str) -> str:
 file = open('test', 'rb')
 savedata = file.read()
 str = decrypt_data(savedata)
+print(str)
 #print(str.decode('utf-8')   )
 
