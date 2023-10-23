@@ -4,7 +4,7 @@
 
 Just get on the website and download your data. It's that simple. :)
 
-https://davphla.github.io/GD-GetSavefileInXML/
+https://davphla.github.io/GD-savefile-in-xml/
 
 ## How it works
 
